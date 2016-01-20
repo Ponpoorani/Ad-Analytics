@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>Bullseye DSP - Target Right Viewers</title>
+
+
+
+<!-- jQuery -->
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+</head>
+
+<body>
+<script type="text/javascript">
+$(function () {
+        $('#container').highcharts({
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Column chart with negative values'
+            },
+            xAxis: {
+                categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+            },
+            credits: {
+                enabled: false
+            },
+            series: [{
+                name: 'John',
+                data: [5, 3, 4, 7, 2]
+            }, {
+                name: 'Jane',
+                data: [2, -2, -3, 2, 1]
+            }, {
+                name: 'Joe',
+                data: [3, 4, 4, -2, 5]
+            }]
+        });
+    });
+    
+
+		</script>
+<body>
+<script src="../../js/highcharts.js"></script>
+<script src="../../js/modules/exporting.js"></script>
+<div id="container"
+						style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+					<!-- /.row -->
+
+</body>
+
+</html>
